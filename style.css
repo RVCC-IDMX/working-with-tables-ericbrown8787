@@ -1,3 +1,220 @@
+
+
 body {
-  background-color: aliceblue;
+  background-image:url(twotonedcity.jpg);
+  background-attachment: fixed;
+  background-size:100%;
+  font-family:'Courier New', Courier, monospace;
+  text-align:center;
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+h1{
+  font-size:4rem;
+}
+h2{
+  font-size:2.5rem;
+}
+h3{
+  font-size:1.5rem;
+}
+h1,h2,h3{
+  text-align:center;
+  color:white;
+  margin:auto;
+}
+
+
+.introduction,.sources{
+  text-align:left;
+  background: rgba(247, 148, 137, 1);
+  border:3px solid rgba(38, 11, 133, .5);
+  margin:1rem auto 1rem auto;
+  padding:10px 20px 10px 20px;
+  max-width:600px;
+  line-height: 1.4rem;
+}
+
+.sources{
+  line-height:1rem;
+}
+
+footer{
+  color:white;
+}
+
+.introduction::first-line{
+  font-size:1.4rem;
+}
+
+.calm{
+  font-family:cursive;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+
+.intense{
+  font-family:'Arial Black',sans-serif;
+  font-size:1.3rem;
+}
+
+.table-container,.introduction{
+  box-shadow: 10px 10px 10px black;
+}
+
+.table-container{
+  overflow-x: auto;
+}
+
+
+
+
+/* Table */
+table{
+  padding:5px;
+  border-radius:20px 20px 0px 0px;
+  margin:auto;
+  background-image:linear-gradient(to right, rgba(230, 47, 230,.5),rgba(38, 11, 133, .5));
+  border-spacing:4px 10px;
+}
+
+thead th:nth-child(1) {
+  width: 15%;
+}
+
+thead th:nth-child(2) {
+  width: 15%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 15%;
+}
+
+thead th:nth-child(5) {
+  width: 40%;
+}
+
+/* Table Header */
+th{
+  color:white;
+  font-size:1.1rem;
+  border-bottom:10px double rgba(38, 11, 133, .5);
+  background-color:rgb(97, 27, 155);
+  padding:.5rem;
+}
+
+/* table data */
+td{
+  text-align: center;
+}
+
+th,td{
+  box-shadow:0px -1px 10px black;
+}
+
+.title,.artist,.released,.country{
+  padding:.7rem;
+  font-size:1.1rem;
+}
+
+/* Comments Box Contents */
+.comments{
+  padding:1rem;
+  text-align:left;
+}
+
+.ratingtext{
+  font-weight:bold;
+  padding-top:1rem;
+}
+
+.coffeecups>span{
+  font-size: 1.5rem;
+
+}
+
+/* Rating assignment. Replace the value x in nth-of-type(n+x) with (your star rating)+1 */
+#rating1>.coffeecups>span:nth-of-type(n+9){
+  filter: opacity(10%);
+  
+}
+
+#rating2>.coffeecups>span:nth-of-type(n+11){
+  filter: opacity(10%);
+}
+
+#rating3>.coffeecups>span:nth-of-type(n+9){
+  filter: opacity(10%);
+}
+
+#rating4>.coffeecups>span:nth-of-type(n+10){
+  filter: opacity(10%);
+}
+
+#rating5>.coffeecups>span:nth-of-type(n+5){
+  filter: opacity(10%);
+}
+
+#rating6>.coffeecups>span:nth-of-type(n+8){
+  filter: opacity(10%);
+}
+
+#rating7>.coffeecups>span:nth-of-type(n+9){
+  filter: opacity(10%);
+}
+
+#rating8>.coffeecups>span:nth-of-type(n+9){
+  filter: opacity(10%);
+}
+
+#rating9>.coffeecups>span:nth-of-type(n+11){
+  filter: opacity(10%);
+}
+
+/* Borders and Backgrounds */
+th:first-child{
+  border-radius:20px 0px 0px 0px;
+}
+th:last-child{
+  border-radius:0px 20px 0px 0px;
+}
+
+tr:nth-child(odd){
+  background-color:rgba(247, 148, 137, 1);
+}
+tr:nth-child(even){
+  background-color:rgb(247, 177, 247);
+}
+
+@media screen and (max-width:1000px) {
+  h1{
+    font-size:2.5rem;
+  }
+  
+  th{
+    padding:.1rem;
+  }
+
+  .title,.artist,.released,.country{
+    padding:.4rem;
+    font-size:1.1rem;
+  }
+
+  .comments{
+    padding:.6rem;
+  }
+
+  .ratingtext{
+    padding-top:.5rem;
+  }
+
+  .coffeecups>span{
+    font-size:.9rem;
+  }
+  
 }
